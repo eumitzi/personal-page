@@ -112,21 +112,58 @@ It contains basic HTML elements and it helps me understand the tree structure of
             </table>
         </div>
         <!-- My Schedule section end -->
-<!-- My Skills section start -->
-        <div class="section">
-            <h1><span>My Skills</span></h1>
+<div class="section">
+            <h1><span>My Skills so far</span></h1>
             <ul>
                 <li>HTML <br />
-                    <progress min="0" max="100" value="80"></progress>
+                    <progress min="0" max="100" value="100"></progress>
                 </li>
+				<li>CSS <br />
+					<progress min="0" max="100" value="100"></progress>
+				</li>
+				<li>jQuery <br />
+					<progress min="0" max="100" value="100"></progress>
+				</li>
+				<li>JAVA <br />
+					<progress min="0" max="100" value="60"></progress>
+				</li>
+				<li>C# <br />
+					<progress min="0" max="100" value="50"></progress>
+				</li>
                 <li>JavaScript <br />
-                    <progress min="0" max="100" value="50"></progress>
+                    <progress min="0" max="100" value="100"></progress>
                 </li>
-                <li>Python <br />
-                    <progress min="0" max="100" value="30"></progress>
+                
+            </ul>
+        </div>
+        <!-- My Skills section end -->
+	
+	<!-- My Skills section start -->
+        <div class="section">
+            <h1><span>My Skills so far</span></h1>
+            <ul>
+                <li>HTML <br />
+                    <progress min="0" max="100" value="100"></progress>
                 </li>
+				<li>CSS <br />
+					<progress min="0" max="100" value="100"></progress>
+				</li>
+				<li>jQuery <br />
+					<progress min="0" max="100" value="100"></progress>
+				</li>
+				<li>JAVA <br />
+					<progress min="0" max="100" value="60"></progress>
+				</li>
+				<li>C# <br />
+					<progress min="0" max="100" value="50"></progress>
+				</li>
+                <li>JavaScript <br />
+                    <progress min="0" max="100" value="100"></progress>
+                </li>
+                
             </ul>
         </div>
         <!-- My Skills section end -->
 	</body>
+	
 </html>
