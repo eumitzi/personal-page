@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  
+    h4, h2{
+		  font-format: verdana;
+		  color: pink;
+    }
+    body{
+        background-color: grey;
+     }
+	#img-caption{
+		font-family: Verdana, "Helvetica Neue", Helvetica;
+		font-size: medium;
+		font-style: italic;
+		font-weight: ligther;
+		color: pink;
+		text-align: left;
+		white-space: pre;
+		vertical-align: left;
+		text-shadow: 5px 5px 5px purple;
+		
+	 }
+	 #unordered-list{
+		list-style: disc inside none;
+	 }
+	 
+	 #image {
+    border-radius: 5px;
+    cursor: pointer;
+	position: center;
+}
+
+#image:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+  </style>
+   </head> 
+  <body>
+ <div id="main">
+ <h1 id="title">The 1975</h1>
+ </div>
+ <div>
+ <h2>The 1975 is an English rock band originating from Manchester</h2>
+ </div>
+<div id="img-div">
+  <img id="image" src="https://www.lalive.com/assets/img/The-1975-640x360.jpg" alt="This should`ve been an image of The 1975">
+	  <div id="img-caption"> 
+	  Matty Healy picked up music when the best friend of his dad died, leaving him two guitars. 
+	  His confrontational attitude resulted in getting kicked out of private school at the age of fourteen and 
+	  started drumming in a punk band with eventual band mates <strong> Adam Hann (guitar) </strong> and <strong> Ross MacDonald (bass) </strong>.
+	  </div>
+  </div>
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <div id="tribute-info">
+    <ui id="unordered-list">
+      <h3 id="band-info">Here is a timeline of The 1975</h3>
+      <li><strong>  2002-2012 </strong> This is the year when the group was formed </li>
+      <li><strong> 2012-2014 </strong> Early career and self-titled debut album </li>
+      <li><strong> 2015-2017 </strong> I like it when you sleep, for you`re so beautiful yet so unaware of it </li>
+      <li><strong> 2017-present </strong> Music for cars era </li>
+    </ui>
+       </div>
+    <div>
+        <h4>For additional information about the band, please access the following link:</h4>
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/The_1975"
+           target="_blank" style="color:black">The 1975 Wiki</a>
+   </div>
+   <script>
+   var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("image");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+   </script>
+    </body>
+</html>
