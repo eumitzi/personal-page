@@ -1,0 +1,50 @@
+.hoverWrapperPass:hover #hoverShowPass {
+ display: block;
+}
+
+.hoverWrapperPass #hoverShowPass {
+ display: none;
+ position: absolute;
+ background-color: white;
+ border-color: blue;
+ border-radius: 1px 1px 1px 1px;
+ border: 1px solid blue;
+ color: blue;
+ text-align: center;
+ padding: 5px 5px;
+ position: right;
+ width: 200px;
+ height: 60px;
+ left: 450px;
+ top: 120px;
+}
+
+.hoverWrapperButt:hover #hoverShowButt {
+ display: block;
+}
+
+.hoverWrapperButt #hoverShowButt {
+ display: none;
+ position: absolute;
+ background-color: white;
+ border-color: blue;
+ color: blue;
+ text-align: center;
+ padding: 8px 8px;
+ position: right;
+ width: 200px;
+ height: 60px;
+ left: 450px;
+ top: 180px;
+}
+
+/* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
